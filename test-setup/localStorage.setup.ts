@@ -23,6 +23,22 @@ export const existingUsers = [
   },
 ] as const
 
+export const newUsers = [
+  {
+    email: 'test4@mail.com',
+    password: 'testPassword!',
+    firstName: 'Test4',
+    lastName: 'Testsson4',
+  },
+  {
+    email: 'test5',
+    password: 'abc',
+    firstName: 'Test5',
+    lastName: 'Testsson5',
+  },
+ 
+] as const
+
 setup('localStorage', async () => {
   const storageState = {
     cookies: [],
